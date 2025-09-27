@@ -1,0 +1,46 @@
+<!-- This file must be placed inside src/main/webapp/ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps Success!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+        p {
+            color: #3498db;
+            font-size: 1.2em;
+        }
+        .time {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CI/CD Pipeline Success!</h1>
+        <p>This page was deployed automatically by Jenkins to Tomcat.</p>
+        <p>Your Continuous Deployment process is working!</p>
+        <div class="time">
+            Current Server Time: <%= new java.util.Date() %>
+        </div>
+    </div>
+</body>
+</html>
